@@ -56,6 +56,11 @@ app.post('/enviar-correo', (req, res) => {
     });
 });
 
+// Ruta para manejar el envío de correos
+app.get('/prueba', (req, res) => {
+    res.send('¡Hola desde Express!');
+});
+
 app.listen(port, () => {
     console.log(`Servidor escuchando en el puerto ${port}`);
 });
